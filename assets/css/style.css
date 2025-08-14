@@ -15,7 +15,7 @@ body {
     font-size: 1.6rem;
 }
 
-/* ===============common================ */
+/* =============== common ================ */
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -42,7 +42,22 @@ a {
     opacity: 0.9;
 }
 
-/* ===============header================ */
+.section-heading {
+    color: #10375C;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-desc {
+    color: #575F66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+/* =============== header ================ */
 .header {
     background: var(--header-bg);
     padding: 30px 0 110px;
@@ -161,4 +176,89 @@ a {
     width: 210px;
     height: 410px;
     margin-left: -6px;
+}
+
+
+/* =========== service ========== */
+.service {
+    margin: 110px 0;
+    padding: 60px 0;
+}
+
+.service__heading {
+    text-align: center;
+}
+
+.service__desc {
+    margin: 18px auto 0;
+    text-align: center;
+    width: 40%;
+}
+
+.service__row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service-item {
+    padding: 21px;
+    width: 470px;
+    border-radius: 10px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    transition: 0.25s;
+}
+
+.service-item:hover {
+    position: relative;
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
+}
+
+.service-item__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #EFF6FD;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: 0.25s;
+    color: #10375C;
+}
+
+.service-item:hover .service-item__icon{
+    color: #FFF;
+    background: #2E80CE;
+}
+
+.service-item__heading {
+    color: #10375C;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.service__btn {
+    margin-top: 55px;
 }
