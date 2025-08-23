@@ -128,6 +128,7 @@
 
             <!-- nav mobile -->
             <ul id="navbar__list--mobile"></ul>
+
             <!-- Sử dụng Javascript để copy navbar -->
             <script>
                 const navPC = document.querySelector("#navbar__list--pc");
@@ -135,6 +136,17 @@
                 // Sao chép
                 navMobile.innerHTML = navPC.innerHTML;
             </script>
+
+            <!-- separate ngăn cách -->
+            <div class="separate"></div>
+
+            <!-- cta action -->
+            <li class="navbar__item">
+                <a href="#!" class="navbar__link">Log In</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#!" class="navbar__link">Sign Up</a>
+            </li>
         </div>
     </div>
 
