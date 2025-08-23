@@ -178,22 +178,47 @@
         width: 90%;
         margin: 0 auto;
     }
+
+    /* 15. Code phần blog */
+    .blog__inner {
+        flex-direction: column-reverse;
+        row-gap: 40px;
+    }
+
+    .blog-content {
+        width: 90%;
+        text-align: center;
+    }
+
+    .blog__control {
+        justify-content: center;
+    }
+
+    /* 16. Code phần Appointment */
+    .appointment__desc {
+        width: 100%;
+    }
 }
 
-
-
-
-
-
-
-
 /* Tablet */
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .footer-hidden-tablet {
+        display: none;
+    }
+
+    .footer__top {
+        grid-template-columns: 0.5fr 0.5fr 1fr;
+    }
+
+    /* 17. Code phần footer */
+    .footer-hidden-tablet {
+        display: none;
+    }
+
+    .footer__top {
+        grid-template-columns: 0.5fr 0.5fr 1fr;
+    }
+}
 
 /* Mobile */
 @media (max-width: 767.98px) {}
-
-
-.footer {
-    display: none;
-}
