@@ -1,8 +1,13 @@
 /* PC */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+}
 
 /* Tablet && Mobile */
 @media (max-width: 991.98px) {
+
     /* 1. Ẩn navbar trên tablet và mobile */
     .navbar {
         display: none;
@@ -37,15 +42,63 @@
         /* Bình thường ẩn overlay đi */
         opacity: 0;
         visibility: hidden;
-        transition: 0.5s;
+        transition: 0.4s;
     }
 
     /* 5. Kiểm tra nếu checkbox được check thì hiện overlay */
-    .menu-checkbox:checked ~ .menu-overlay {
+    .menu-checkbox:checked~.menu-overlay {
         opacity: 1;
         visibility: visible;
     }
+
+    /* 6. Code cho menu drawer */
+    .menu-drawer {
+        padding: 36px;
+        position: fixed;
+        background: #0d2c49;
+        inset: 0 45% 0 0;
+        z-index: 2;
+        transform: translate(-100%);
+        transition: 0.4s;
+    }
+
+    /* 7. Kiểm tra nếu checkbox được check thì hiện menu */
+    .menu-checkbox:checked~.menu-drawer {
+        transform: translate(0);
+    }
+
+    /* 8. Menu top */
+    .menu-drawer__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .close__menu {
+        width: 26px;
+        color: #FFF;
+    }
+
+    #navbar__list--mobile {
+        margin-top: 25px;
+    }
+
+    .navbar__link {
+        display: block;
+        font-size: 1.8rem;
+
+        &:hover {
+            background: #0d2c49c7;
+        }
+    }
 }
+
+
+
+
+
+
+
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {}
